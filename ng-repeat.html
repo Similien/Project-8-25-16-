@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta="UTF-8">
+		<title>ng-repeat</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<link rel="stylesheet" href="Css/style.css" type="text/css">
+	</head>
+	<body  ng-app="">
+		    		
+			<div id="container">
+
+					<!--My Example 8/25/16 -->
+					<div id="content">
+							<h2>Shopping Items</h2>
+									<div ng-init ="list=[{item: 'Apple juice', price: ' $2.39'}, 
+									{item: 'Eggs', price: ' $4.39'},{item: 'Chocolate Milk', price: ' $1.39'},
+									{item: 'Apple pie', price: ' $5.39'}]"]>
+									</div>
+							
+									<p ng-repeat= "shop in list">
+										Item: {{shop.item}}<br/>
+										Price: {{shop.price}}<br/>
+									</p>
+					</div>			
+
+			</div>
+	</body>
+</html>
